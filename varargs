@@ -1,0 +1,21 @@
+package project;
+
+class calculate
+{
+	public int add(int ... n) {
+		int sum=0;
+		for(int i : n)
+		{
+			sum=sum+i;
+		}
+		return sum;
+	}
+}
+public class varargs {
+
+	public static void main(String[] args) {
+		calculate a = new calculate();
+		System.out.println(a.add(1,2,3,7,7,6,5));
+	}
+
+}
