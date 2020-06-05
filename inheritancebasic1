@@ -1,0 +1,32 @@
+package project;
+
+class calc 
+{
+	public int add(int ... j) {
+		int sum=0;
+				for(int i : j) {
+					sum=sum+i;
+				}
+		return sum;
+	}
+}
+class calcAdv extends calc 
+{
+	public int s(int i, int j ) {
+	return i-j;
+	}
+}
+
+
+public class inheritence1 {
+
+	public static void main(String[] args) {
+		calc obj = new calc();
+		calcAdv o = new calcAdv();
+		int result1=obj.add(1,2,7,8,9);
+		int result2=o.s(5,1);
+		System.out.println("add   "+result1);
+		System.out.println("sub   "+result2);
+	}
+
+}
