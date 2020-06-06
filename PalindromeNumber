@@ -1,0 +1,23 @@
+package project;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		
+
+		        int n= 121, a = 0, r, b;
+
+		        b = n;
+		        while( n != 0 )
+		        {
+		            r = n % 10;
+		          a = a * 10 + r;
+		            n = n/10;
+		        }
+
+		        if (b == a)
+		            System.out.println(b + " is a palindrome.");
+		        else
+		            System.out.println(b + " is not a palindrome.");
+		    }
+}
